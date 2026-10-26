@@ -304,10 +304,10 @@ int main() {
         MENU_EXIT_TO_MENU, //return to the main menu
         MENU_PRINTF_TO_USB, //dbg printf using usb (gba to pc)
         MENU_USB_PRINT, //tx message from pc to gba
-        MENU_FILE_TO_RAM, //read file via fifo
-        MENU_FILE_TO_ROM, //read file to cart memory (dma)
-        MENU_RAM_TO_FILE, //write file via fifo
-        MENU_ROM_TO_FILE, //write file from cart memory (dma)
+        MENU_FILE_TO_RAM, //read file via fifon (slow)
+        MENU_FILE_TO_ROM, //read file to cart memory (fast)
+        MENU_RAM_TO_FILE, //write file via fifo (slow)
+        MENU_ROM_TO_FILE, //write file from cart memory (fast)
         MENU_RAM_TO_USB, //write to usb via fifo
         MENU_FILE_LIST,
         MENU_RTC_PRINT,
